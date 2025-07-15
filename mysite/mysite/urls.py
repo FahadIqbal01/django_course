@@ -21,5 +21,10 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path(route= '', view= views.index, name= 'index'),          # route to Home page.
-    path(route= 'about', view= views.about, name= 'about')      # route to About page.
+    # path(route= 'about', view= views.about, name= 'about')      # route to About page.
+    path(route= 'remove_punc', view= views.remove_punc, name= 'remove_punc'),
+    path(route= 'capitalize_first', view= views.capitalize_first, name= 'capitalize_first'),
+    path(route= 'new_line_remove', view= views.new_line_remove, name= 'new_line_remove'),
+    path(route= 'space_remove', view= views.space_remove, name= 'space_remove'),
+    path(route= 'char_count', view= views.char_count, name= 'char_count')
 ]
