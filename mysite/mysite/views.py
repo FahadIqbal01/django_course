@@ -1,8 +1,11 @@
 # I have created this file - Fahad Iqbal
 from django.http import HttpResponse
+from django.shortcuts import render
 
 def index(request):
-    return HttpResponse("Hello Fahad Iqbal!!")
+    return render(request= request, template_name= 'index.html')
+
+    # return HttpResponse("Hello Fahad Iqbal!!")
 
 def about(request):
     return HttpResponse("About Fahad Iqbal...")
